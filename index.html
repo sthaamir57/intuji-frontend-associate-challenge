@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./iconsax-css/style.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <!-- Sidebar Header -->
+        <header class="sidebar-header">
+          <a href="#">
+            <img src="./imgs/header-icon-1.svg" alt="Intuji" />
+          </a>
+        </header>
+
+        <!-- Navigation Section -->
+        <nav class="sidebar-nav">
+          <div class="sidebar-nav-section">
+            <ul class="sidebar-menu">
+              <li>
+                <a href="#" class="sidebar-link current">
+                  <img
+                    src="./svgs/element-4.svg"
+                    alt="icon"
+                    width="24"
+                    height="24"
+                  />
+                  Dashboard
+                </a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link">
+                  <img
+                    src="./svgs/Calendar.svg"
+                    alt="icon"
+                    width="24"
+                    height="24"
+                  />
+                  Schedule
+                </a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link">
+                  <img src="./svgs/sms.svg" alt="icon" width="24" height="24" />
+                  Message
+                </a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link">
+                  <img
+                    src="./svgs/Chart.svg"
+                    alt="icon"
+                    width="24"
+                    height="24"
+                  />
+                  Analytics
+                </a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link">
+                  <img
+                    src="./svgs/profile-2user.svg"
+                    alt="icon"
+                    width="24"
+                    height="24"
+                  />
+                  Team
+                </a>
+              </li>
+              <div class="divider"></div>
+              <li>
+                <a href="#" class="sidebar-link">
+                  <img
+                    src="./svgs/user.svg"
+                    alt="icon"
+                    width="24"
+                    height="24"
+                  />
+                  Profile
+                </a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link">
+                  <img
+                    src="./svgs/setting.svg"
+                    alt="icon"
+                    width="24"
+                    height="24"
+                  />
+                  Settings
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar-nav-section">
+            <ul class="sidebar-menu">
+              <li>
+                <a href="#" class="sidebar-link">
+                  <img
+                    src="./svgs/info-circle.svg"
+                    alt="icon"
+                    width="24"
+                    height="24"
+                  />
+                  Help
+                </a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link">
+                  <img
+                    src="./svgs/login.svg"
+                    alt="icon"
+                    width="24"
+                    height="24"
+                  />
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="content">
+        <section class="content-header">
+          <form role="search" class="search-bar">
+            <img
+              src="./svgs/search-normal.svg"
+              alt="search"
+              width="16"
+              height="16"
+            />
+            <input type="search" placeholder="Search here..." />
+          </form>
+
+          <!-- User Controls -->
+          <div class="user-controls">
+            <a href="#" class="btn notifications">
+              <img
+                src="./svgs/notification-bing.svg"
+                alt="notifications"
+                width="24"
+                height="24"
+              />
+            </a>
+            <a href="#" class="btn messages">
+              <img
+                src="./svgs/message-text.svg"
+                alt="notifications"
+                width="24"
+                height="24"
+              />
+            </a>
+            <a href="#" class="profile">
+              <img
+                class="profile-img"
+                src="./imgs/profile.png"
+                alt="profile"
+                width="45"
+                height="45"
+              />
+              <span class="profile-name">Mirie Kiritanii</span>
+              <img
+                src="./svgs/arrow-down.svg"
+                alt="profile"
+                width="24"
+                height="24"
+              />
+            </a>
+          </div>
+        </section>
+
+        <!-- Dashboard widgets -->
+        <section class="widgets-grid">
+          <div class="main-content">
+            <div class="overview-container">
+              <h1>Overview</h1>
+              <div class="overview-cards">
+                <a href="#" class="overview-card balance">
+                  <div class="overview-top">
+                    <img
+                      src="./svgs/empty-wallet.svg"
+                      alt="balance"
+                      height="32"
+                      width="32"
+                    />
+                    <div class="overview-title">
+                      <h2 class="overview-heading">Your Balance</h2>
+                      <div class="overview-subtitle">
+                        <img
+                          src="./svgs/export.svg"
+                          alt="arrow-for-stat"
+                          height="14"
+                          width="14"
+                        />
+                        <p>15 % compared with last month</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="overview-bottom">
+                    <span class="overview-number">$ 28,891.138</span>
+                    <img
+                      src="./svgs/arrow-right.svg"
+                      alt="arrow-right"
+                      height="24"
+                      width="24"
+                    />
+                  </div>
+                </a>
+                <a href="#" class="overview-card saving">
+                  <div class="overview-top">
+                    <img
+                      src="./svgs/save-2.svg"
+                      alt="saving"
+                      height="32"
+                      width="32"
+                    />
+                    <div class="overview-title">
+                      <h2 class="overview-heading">Saving</h2>
+                      <div class="overview-subtitle">
+                        <img
+                          src="./svgs/export-red.svg"
+                          alt="arrow-for-stat"
+                          height="14"
+                          width="14"
+                        />
+                        <p>10 % compared with last month</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="overview-bottom">
+                    <span class="overview-number">$ 1,050.44</span>
+                    <img
+                      src="./svgs/arrow-right-dark.svg"
+                      alt="arrow-right"
+                      height="24"
+                      width="24"
+                    />
+                  </div>
+                </a>
+                <a href="#" class="overview-card expenses">
+                  <div class="overview-top">
+                    <img
+                      src="./svgs/direct-up.svg"
+                      alt="expenses"
+                      height="32"
+                      width="32"
+                    />
+                    <div class="overview-title">
+                      <h2 class="overview-heading">Expenses</h2>
+                      <div class="overview-subtitle">
+                        <img
+                          src="./svgs/export-yellow.svg"
+                          alt="arrow-for-stat"
+                          height="14"
+                          width="14"
+                        />
+                        <p>2 % compared with last month</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="overview-bottom">
+                    <span class="overview-number">$ 200.31</span>
+                    <img
+                      src="./svgs/arrow-right-dark.svg"
+                      alt="arrow-right"
+                      height="24"
+                      width="24"
+                    />
+                  </div>
+                </a>
+                <a href="#" class="overview-card income">
+                  <div class="overview-top">
+                    <img
+                      src="./svgs/direct-down.svg"
+                      alt="incomes"
+                      height="32"
+                      width="32"
+                    />
+                    <div class="overview-title">
+                      <h2 class="overview-heading">Incomes</h2>
+                      <div class="overview-subtitle">
+                        <img
+                          src="./svgs/export-blue.svg"
+                          alt="arrow-for-stat"
+                          height="14"
+                          width="14"
+                        />
+                        <p>8 % compared with last month</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="overview-bottom">
+                    <span class="overview-number">$ 21,121.00</span>
+                    <img
+                      src="./svgs/arrow-right-dark.svg"
+                      alt="arrow-right"
+                      height="24"
+                      width="24"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="analytics-container">
+              <div class="analytics-title">
+                <h1>Analytics</h1>
+                <div class="chart-control">
+                  <p class="chart-label">
+                    <span class="dot label-1"></span>Label 1
+                  </p>
+                  <p class="chart-label">
+                    <span class="dot label-2"></span>Label 2
+                  </p>
+                  <div class="form-group">
+                    <select class="analytics-filter">
+                      <option value="weekly" selected>Weekly</option>
+                      <option value="monthly">Monthly</option>
+                      <option value="yearly">Yearly</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="analytics-chart">
+                <canvas id="myChart"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="side-content">
+            <div class="widget widget-saving-plan">
+              <div class="widget-title">
+                <h1>Saving Plan</h1>
+                <a href="#"> See All</a>
+              </div>
+              <div class="saving-plans">
+                <div class="saving-plan">
+                  <div class="saving-plan-title">
+                    <h3>Bali Vacation</h3>
+                    <p>Target: August 25 2022</p>
+                  </div>
+                  <div class="saving-plan-numbers">
+                    <p class="saving-plan-number">
+                      $ 1950,21<span>/ $ 4000</span>
+                    </p>
+                    <p class="saving-plan-percentage text-primary-blue">48%</p>
+                  </div>
+                  <div class="saving-plan-bar bg-blue"></div>
+                </div>
+                <div class="saving-plan">
+                  <div class="saving-plan-title">
+                    <h3>New Gadget</h3>
+                    <p>Target: August 25 2022</p>
+                  </div>
+                  <div class="saving-plan-numbers">
+                    <p class="saving-plan-number">
+                      $ 790,21<span>/ $ 1000</span>
+                    </p>
+                    <p class="saving-plan-percentage text-yellow">79%</p>
+                  </div>
+                  <div class="saving-plan-bar bg-yellow"></div>
+                </div>
+                <div class="saving-plan">
+                  <div class="saving-plan-title">
+                    <h3>Charity</h3>
+                    <p>Target: August 25 2022</p>
+                  </div>
+                  <div class="saving-plan-numbers">
+                    <p class="saving-plan-number">
+                      $ 32,111<span>/ $ 100</span>
+                    </p>
+                    <p class="saving-plan-percentage text-green">32%</p>
+                  </div>
+                  <div class="saving-plan-bar bg-green"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="widget widget-saving-plan">
+              <div class="widget-title">
+                <h1>Recent Transaction</h1>
+                <a href="#"> See All</a>
+              </div>
+              <div class="recent-transactions">
+                <div class="recent-transaction">
+                  <img
+                    src="./imgs/figma.png"
+                    alt="figma"
+                    width="48"
+                    height="48"
+                  />
+                  <div class="transaction-content">
+                    <div class="transaction-title">
+                      <h3>Figma</h3>
+                      <p>August 20, 2022</p>
+                    </div>
+
+                    <div class="transaction-info">
+                      <p class="transaction-amount">$ 100</p>
+                      <p class="transaction-status text-green">Completed</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="recent-transaction">
+                  <img
+                    src="./imgs/youtube.png"
+                    alt="youtube"
+                    width="48"
+                    height="48"
+                  />
+                  <div class="transaction-content">
+                    <div class="transaction-title">
+                      <h3>Youtube</h3>
+                      <p>August 20, 2022</p>
+                    </div>
+
+                    <div class="transaction-info">
+                      <p class="transaction-amount">$ 120</p>
+                      <p class="transaction-status text-green">Completed</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="recent-transaction">
+                  <img
+                    src="./imgs/spotify.png"
+                    alt="spotify"
+                    width="48"
+                    height="48"
+                  />
+                  <div class="transaction-content">
+                    <div class="transaction-title">
+                      <h3>Spotify</h3>
+                      <p>August 20, 2022</p>
+                    </div>
+
+                    <div class="transaction-info">
+                      <p class="transaction-amount">$ 15</p>
+                      <p class="transaction-status text-green">Completed</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="recent-transaction">
+                  <img
+                    src="./imgs/freepik.png"
+                    alt="freepik"
+                    width="48"
+                    height="48"
+                  />
+                  <div class="transaction-content">
+                    <div class="transaction-title">
+                      <h3>Freepik</h3>
+                      <p>August 20, 2022</p>
+                    </div>
+
+                    <div class="transaction-info">
+                      <p class="transaction-amount">$ 300</p>
+                      <p class="transaction-status text-green">Completed</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./scripts/analytics.js"></script>
+  </body>
+</html>

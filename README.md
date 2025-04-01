@@ -14,4 +14,4 @@
 # Getting Started
 - Clone this repository or download the files
 - Open `index.html` in your web browser
-- Or open live website here [https://sthaamir57.github.io/website-challenge/](https://sthaamir57.github.io/website-challenge/)
+- Or open live website here [[https://sthaamir57.github.io/website-challenge/](https://sthaamir57.github.io/website-challenge/)](https://sthaamir57.github.io/intuji-frontend-associate-challenge/)
